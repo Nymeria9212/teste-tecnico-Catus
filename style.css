@@ -1,0 +1,88 @@
+header{
+    height: 5.875rem;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    
+
+    .container{
+        width: 75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+
+
+        .logo_site{
+            height: 3.375rem;
+        }
+    
+        .menu{
+            width: 30%;
+    
+    
+            ul{
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                font-family:  "Inter", sans-serif;
+                font-size: 1.125rem;
+                gap: 1.875rem;
+                font-weight: 400;
+                
+            }
+        }
+
+        .container_search{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            
+            div{
+                display: flex;
+                align-items: center;
+            }
+
+            .search_user{
+              
+               
+                padding: 0.625rem;
+                background-color: transparent; 
+                border: none; 
+                border-bottom: 2px solid #000; 
+                outline: none; 
+                font-size: 0.875rem; 
+            }
+            .buttons{
+                height: 2.1319rem;
+                width: 2.285rem;
+                border: none;
+                cursor: pointer;
+                background-size: contain;
+                background-position: center;
+            }
+            .button_search{
+                background-image: url("/src/Union.svg");
+                background-repeat: no-repeat;
+                
+              
+            }
+            .button_cart{
+                background-image: url("./src/cart.svg");
+                background-repeat: no-repeat;
+                
+            }
+        }
+      
+    }
+
+   
+   
+    
+   
+
+}
+
+main{}
+
+footer{}
