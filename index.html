@@ -1,82 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catus</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="./script.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="./script.js"></script>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="logo_site">
-                <img src="./src/Group.png" alt="">
-            </div>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Loja</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="container_search">
-                    <input type="text" class="search_user" placeholder="Digite aqui sua busca">
-                    <button class="buttons button_search"></button>
-                    <button class="buttons button_cart"></button>
-            </div>
+      <div class="container">
+        
+          <img class="logo_site" src="./src/Group.png" alt="" />
+        
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Loja</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="container_search">
+          <input
+            type="text"
+            class="search_user"
+            placeholder="Digite aqui sua busca"
+          />
+          <button class="buttons button_search"></button>
+          <button class="buttons button_cart"></button>
+        </div>
+      </div>
     </header>
     <main>
-        <div class="banner"></div>
-        <div class="products"></div>
+      <div class="banner">
+        <div>
+          <div class="box-1_banner">
+            <img src="./src/banner 01.png" alt="Imagem de um berço de bebê" />
+            <img
+              src="./src/banner 02.png"
+              alt="Uma mãe deitada brincando com o seu bebê"
+            />
+          </div>
+          <div class="box-2_banner">
+            <img
+              src="./src/banner 03.png"
+              alt="Um bebê em um carrinho de bebê, e sua mãe lendo uma história com ela"
+            />
+          </div>
+          <div class="box-3_banner">
+            <img
+              src="./src/banner 04.png"
+              alt="Mulher grávida olhando roupas de bebê"
+            />
+            <img
+              src="./src/banner 05.png"
+              alt="Casal sentado em um sofá segundo um bebê"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <h2>Oportunidades para economizar</h2>
+        <hr />
+        <div class="scroll-container">
+
+            <button id="scroll-left" class="scroll-button"> <img src="./src/Component 8.png" alt=""> </button>
+    
+            <ul class="list_products"></ul>
+            <button id="scroll-right" class="scroll-button"><img src="./src/Component 9.png" alt=""></button>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="container_footer">
-            <div class="box-1_footer">
-                <div>
-                    <h3>Central de Atendimento</h3>
-                    <hr class="line_footer">
-                </div>
-                
-                <div class="links_footer">    
-                    <a href="#">Ajuda e suporte</a>
-                    <a href="#">Fale conosco</a>
-                    <a href="#">Faq</a>
-                </div>
-                
-                <span>Whatsapp: (11) 99999-9999</span>
-                
-                <div>
-                    <h4>Nossos horários</h4>
-                    <p>Segunda a sexta das 9h às 18h</p>
-                </div>
-            </div>
-            <div class="box-2_footer">
-             <h3>Selos de Segurança</h3>
-             <hr class="line_footer">
-             <div>
+      <div class="container_footer">
+        <div class="box-1_footer">
+          <div>
+            <h3>Central de Atendimento</h3>
+            <hr class="line_footer" />
+          </div>
 
-                 <img src="./src/Frame 129.png" alt="Selo de segurança Google">
-                 <img src="./src/selo_lojaprotegida.png" alt="Loja protegida">
-             </div>
-            </div>
-            <div class="box-3_footer">
-             <h3>Formas de Pagamento</h3>
-             <hr class="line_footer">
-             <img src="./src/Frame 124.png" alt="Logos de várias empresas de cartão de crédito e outras formas de pagamento">
-            </div>
+          <div class="links_footer">
+            <a href="#">Ajuda e suporte</a>
+            <a href="#">Fale conosco</a>
+            <a href="#">Faq</a>
+          </div>
+
+          <span>Whatsapp: (11) 99999-9999</span>
+
+          <div>
+            <h4>Nossos horários</h4>
+            <p>Segunda a sexta das 9h às 18h</p>
+          </div>
         </div>
+        <div class="box-2_footer">
+          <h3>Selos de Segurança</h3>
+          <hr class="line_footer" />
+          <div>
+            <img src="./src/Frame 129.png" alt="Selo de segurança Google" />
+            <img src="./src/selo_lojaprotegida.png" alt="Loja protegida" />
+          </div>
+        </div>
+        <div class="box-3_footer">
+          <h3>Formas de Pagamento</h3>
+          <hr class="line_footer" />
+          <img
+            src="./src/Frame 124.png"
+            alt="Logos de várias empresas de cartão de crédito e outras formas de pagamento"
+          />
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
