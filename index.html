@@ -14,21 +14,26 @@
 <body>
     <header>
         <div class="container">
-
-
-            <img class="logo_site" src="./src/Group.png" alt="Logo da Catus, parecido com um macaco">
-            <div class="menu"><ul>
-                <li>Loja</li>
-                <li>Login</li>
-                <li>Sobre</li>
-                <li>Contato</li>
-            </ul></div>
+            <div class="logo_site">
+                <img src="./src/Group.png" alt="">
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Loja</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
             <div class="container_search">
-                <div>
-                    <input class="search_user" placeholder="Digite aqui sua busca" type="text">
+                    <input type="text" class="search_user" placeholder="Digite aqui sua busca">
                     <button class="buttons button_search"></button>
-                </div>
-                <button class="buttons button_cart"></button>
+                    <button class="buttons button_cart"></button>
             </div>
         </div>
     </header>
@@ -36,6 +41,42 @@
         <div class="banner"></div>
         <div class="products"></div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container_footer">
+            <div class="box-1_footer">
+                <div>
+                    <h3>Central de Atendimento</h3>
+                    <hr class="line_footer">
+                </div>
+                
+                <div class="links_footer">    
+                    <a href="#">Ajuda e suporte</a>
+                    <a href="#">Fale conosco</a>
+                    <a href="#">Faq</a>
+                </div>
+                
+                <span>Whatsapp: (11) 99999-9999</span>
+                
+                <div>
+                    <h4>Nossos horários</h4>
+                    <p>Segunda a sexta das 9h às 18h</p>
+                </div>
+            </div>
+            <div class="box-2_footer">
+             <h3>Selos de Segurança</h3>
+             <hr class="line_footer">
+             <div>
+
+                 <img src="./src/Frame 129.png" alt="Selo de segurança Google">
+                 <img src="./src/selo_lojaprotegida.png" alt="Loja protegida">
+             </div>
+            </div>
+            <div class="box-3_footer">
+             <h3>Formas de Pagamento</h3>
+             <hr class="line_footer">
+             <img src="./src/Frame 124.png" alt="Logos de várias empresas de cartão de crédito e outras formas de pagamento">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

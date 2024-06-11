@@ -1,88 +1,287 @@
 header{
-    height: 5.875rem;
     background-color: #EEEEEE;
-    display: flex;
-    justify-content: center;
-    
-
-    .container{
-        width: 75rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .container {
        
-
-
-        .logo_site{
-            height: 3.375rem;
-        }
-    
-        .menu{
-            width: 30%;
-    
-    
-            ul{
-                display: flex;
-                justify-content: space-around;
-                list-style: none;
-                font-family:  "Inter", sans-serif;
-                font-size: 1.125rem;
-                gap: 1.875rem;
-                font-weight: 400;
-                
-            }
-        }
-
-        .container_search{
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            
-            div{
-                display: flex;
-                align-items: center;
-            }
-
-            .search_user{
-              
-               
-                padding: 0.625rem;
-                background-color: transparent; 
-                border: none; 
-                border-bottom: 2px solid #000; 
-                outline: none; 
-                font-size: 0.875rem; 
-            }
-            .buttons{
-                height: 2.1319rem;
-                width: 2.285rem;
-                border: none;
-                cursor: pointer;
-                background-size: contain;
-                background-position: center;
-            }
-            .button_search{
-                background-image: url("/src/Union.svg");
-                background-repeat: no-repeat;
-                
-              
-            }
-            .button_cart{
-                background-image: url("./src/cart.svg");
-                background-repeat: no-repeat;
-                
-            }
-        }
-      
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 0.5rem;
     }
 
-   
-   
+    .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .menu> ul {
+       
+       
+        width: 30%;
+        background-color: #EEEEEE;
+        text-align: center;
+        padding: 1rem 0;
+        position: absolute;
+        top: -3rem;
+        border-radius: 0.5rem;
+        
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        li{
+            padding:2px 0;
+        }
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+        position: absolute;
+        right: 0.05rem;
+        top: 0.05rem;
+    }
+
+    .hamburger .line {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        top: 5.875rem;
+        left: 0;
+        padding: 1rem;
+        align-items: flex-end;
+        position: absolute;
+    }
+
+    .container_search {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .buttons {
+        height: 2.1319rem;
+        width: 2.285rem;
+        border: none;
+        cursor: pointer;
+        background-size: contain;
+        background-position: center;
+    }
     
-   
+    .button_search {
+        background-image: url("/src/Union.svg");
+        background-repeat: no-repeat;
+    }
+    
+    .button_cart {
+        background-image: url("./src/cart.svg");
+        background-repeat: no-repeat;
+    }
+    .search_user {
+        padding: 0.625rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #000;
+        outline: none;
+        font-size: 0.875rem;
+    }
+
 
 }
 
-main{}
 
-footer{}
+
+main{}
+footer{
+    display: flex;
+    flex-direction: column;
+    background: #404040;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'Inter',sans-serif;
+    align-items: center;
+
+    .container_footer{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1.5rem 0;
+
+
+        .line_footer {
+            border: none;
+            height: 2px;
+            position: relative;
+        }
+        
+        .line_footer::before,
+        .line_footer::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 60%; 
+        }
+        
+        .line_footer::before{
+            width: 40%;
+        }
+        
+        .line_footer::before {
+            left: 0;
+            background-color: #32BCAD; /* Cor da primeira metade */
+        }
+        
+        .line_footer::after {
+            right: 0;
+            background-color: #CFCFCF; 
+        }
+        .box-1_footer{
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+
+            /* padding: 1.5rem 0; */
+            .links_footer{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .links_footer>a{
+                text-decoration: none;
+                color: #FFFFFF;
+                cursor: pointer;
+
+            }
+
+            h3,h4,span{
+                font-weight: 600;
+                font-size: 1rem;
+            }
+          
+        }
+        .box-1_footer div:last-child{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .box-2_footer, .box-3_footer{
+            padding-bottom: 1rem;
+            h3{
+                font-weight: 600;
+            }
+        }
+        .box-2_footer>div{
+            display: flex;
+            justify-content: flex-start;
+            gap: 1rem;
+        }
+        .box-2_footer>div>img{
+            width: 45%;
+            max-width: 9.1269rem;
+        }
+
+        .box-3_footer>img{
+            width: 100%;
+        }
+     
+    }
+}
+    
+
+
+
+@media(min-width:960px) {
+    header {
+        height: 5.875rem;
+        display: flex;
+        justify-content: center;
+        
+
+        .hamburger{
+            display: none;
+        }
+
+        .container{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+           
+    
+    
+            .logo_site{
+                height: 3.375rem;
+            }
+        
+            .menu{
+                display: block;
+              
+                position: relative;
+        
+        
+                ul{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    font-family:  "Inter", sans-serif;
+                    font-size: 1.125rem;
+                    gap: 1.5rem;
+                    font-weight: 400;
+                    top: 0;
+                    padding: 0;
+                    
+                }
+            }
+    
+            .container_search{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                
+                div{
+                    display: flex;
+                    align-items: center;
+                }
+    
+             
+             
+            }
+          
+        }
+           
+   
+    
+ 
+    
+    
+    
+       
+    }
+        
+       
+    main{}
+    
+    footer{
+        .container_footer{
+            flex-direction: row;
+        
+            .box-1_footer,.box-2_footer,.box-3_footer{
+                width: 33%;
+            }
+        }
+
+
+    }
+    
+}
